@@ -1,0 +1,98 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 200px;
+  padding: 32px 16px 16px;
+  border: 1px solid $color-border;
+  border-radius: 5px;
+
+  &__image {
+    width: 160px;
+    height: 134px;
+    margin-inline: 3px;
+  }
+
+  &__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  &__apple {
+    margin-top: 40px;
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+
+  &__code {
+    display: block;
+    align-self: flex-start;
+    margin-top: 4px;
+    margin-bottom: 16px;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    color: $color-text;
+  }
+
+  &__reviews {
+    margin-top: 0;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: center;
+  }
+
+  &__price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  &__price-label {
+    font-size: 12px;
+    font-weight: 400;
+    color: $color-text;
+  }
+
+  &__price-value {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  &__rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  &__buy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 38px;
+    margin: 16px 0;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    color: $index-text-color;
+    background-color: $color-primary;
+    border: 1px solid $color-primary;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: $color-primary-hover;
+      border-color: $color-primary-hover;
+    }
+  }
+}
