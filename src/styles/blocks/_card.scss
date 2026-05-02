@@ -1,3 +1,5 @@
+@import 'variables';
+
 .card {
   display: flex;
   flex-direction: column;
@@ -40,11 +42,15 @@
   }
 
   &__reviews {
-    margin-top: 0;
-    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
     font-weight: 400;
+    font-size: 10px;
     line-height: 14px;
-    text-align: center;
+    letter-spacing: 0%;
+    text-align: right;
+    vertical-align: bottom;
   }
 
   &__price {
