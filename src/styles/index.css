@@ -5,7 +5,7 @@
   box-sizing: border-box;
   width: 200px;
   padding: 32px 16px 16px;
-  border: 1px solid #ccc;
+  border: 1px solid #f3f3f3;
   border-radius: 5px;
 }
 
@@ -76,7 +76,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 12px;
+  margin-bottom: 24px;
 }
 
 .card__buy {
@@ -85,7 +85,7 @@
   justify-content: center;
   box-sizing: border-box;
   width: 100%;
-  height: 38px;
+  height: 40px;
   font-size: 14px;
   font-weight: 700;
   text-decoration: none;
@@ -97,7 +97,12 @@
 
 .card__buy:hover {
   background-color: #008ecc;
+}
+
+.card__buy[data-qa='hover']:hover {
+  background-color: transparent;
   border-color: #008ecc;
+  color: #008ecc;
 }
 
 .stars {
